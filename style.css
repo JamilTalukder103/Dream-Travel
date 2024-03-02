@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common style */
+.primary-color-1 {
+    color: #FF5400;
+}
+
+.primary-color-2 {
+    color: #424247;
+}
+
+.primary-btn {
+    background-color: #FF5400;
+    border: none;
+    padding: 5px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* header section style */
+#header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+.menu {
+    width: 50px;
+    display: none;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.logo h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.banner {
+    margin-top: 20px;
+    text-align: center;
+    background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.banner .banner-description {
+    color: #fff;
+}
+
+.banner-text {
+    padding: 20px 0;
+}
+
+.banner-title {
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+select {
+    padding: 15px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+
+/* mobile responsive */
+@media screen and (max-width:500px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .select {
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .banner {
+        height: 100vh;
+    }
+
+    .logo h2 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+}
