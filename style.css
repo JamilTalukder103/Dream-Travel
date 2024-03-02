@@ -5,6 +5,12 @@
 }
 
 /* common style */
+section {
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .primary-color-1 {
     color: #FF5400;
 }
@@ -101,6 +107,34 @@ select {
 
 }
 
+/* popular tours style */
+#popular-tours {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    height: 400px;
+}
+
+.tours-img img {
+    width: 100%;
+    height: 400px;
+}
+
+.tours-content ul {
+    margin-left: 30px;
+    padding: 10px 0;
+}
+
+.tours-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.read-more-btn {
+    padding: 10px 15px;
+    margin-top: 20px;
+}
 
 /* mobile responsive */
 @media screen and (max-width:500px) {
@@ -124,5 +158,9 @@ select {
     .logo h2 {
         font-size: 30px;
         font-weight: 800;
+    }
+
+    #popular-tours {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
