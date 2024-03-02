@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 /* common style */
 section {
-    padding-top: 50px;
     width: 90%;
     margin: 0 auto;
 }
@@ -66,7 +66,7 @@ nav ul li {
 }
 
 .banner {
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
     background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
     height: 80vh;
@@ -112,7 +112,7 @@ select {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    height: 400px;
+    padding-top: 100px;
 }
 
 .tours-img img {
@@ -135,6 +135,89 @@ select {
     padding: 10px 15px;
     margin-top: 20px;
 }
+
+/* destination design */
+#destination {
+    padding-top: 50px;
+}
+
+.destination-content {
+    text-align: center;
+}
+
+.destination-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.location {
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas:
+        "maldives   maldives  indenosia  indenosia"
+        " srlinka  america   america    kasmir"
+        "bangladesh bandorbon bandorbon  bandorbon"
+    ;
+    gap: 20px;
+
+    justify-content: center;
+}
+
+.location h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+
+.maldives {
+    grid-area: maldives;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.indenosia {
+    grid-area: indenosia;
+    position: relative;
+}
+
+.srlinka {
+    grid-area: srlinka;
+    position: relative;
+}
+
+.america {
+    grid-area: america;
+    position: relative;
+}
+
+.kasmir {
+    grid-area: kasmir;
+    position: relative;
+}
+
+.bangladesh {
+    grid-area: bangladesh;
+    position: relative;
+}
+
+.bandorbon {
+    grid-area: bandorbon;
+    position: relative;
+}
+
+.location img {
+    width: 100%;
+    height: 300px;
+}
+
+
 
 /* mobile responsive */
 @media screen and (max-width:500px) {
@@ -162,5 +245,19 @@ select {
 
     #popular-tours {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .location {
+
+        grid-template-areas:
+            "maldives   maldives  maldives   maldives"
+            " indenosia  indenosia  indenosia  indenosia"
+            " srlinka  srlinka  srlinka  srlinka "
+            "  america   america  america america  "
+            "  kasmir kasmir kasmir kasmir"
+            " bangladesh bangladesh bangladesh bangladesh"
+            " bandorbon bandorbon bandorbon  bandorbon"
+        ;
+
     }
 }
