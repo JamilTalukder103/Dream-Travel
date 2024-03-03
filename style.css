@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    transition: 0.3 ease-in-out;
 }
 
 /* common style */
+hr {
+    margin: 10px 0;
+}
+
 section {
     width: 90%;
     margin: 0 auto;
@@ -98,6 +102,8 @@ nav ul li {
     display: flex;
     justify-content: center;
     padding: 10px;
+
+
 }
 
 select {
@@ -105,6 +111,7 @@ select {
     margin-right: 10px;
     border-radius: 5px;
     border: none;
+
 
 }
 
@@ -279,8 +286,82 @@ select {
     border: 1px solid rgb(209, 117, 117);
 }
 
+
+
+/* news letter section style */
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.newsletter img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.subs-content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FF5400;
+    height: 100%;
+    border-radius: 10px;
+    padding: 100px 20px;
+
+
+}
+
+.subs-content input {
+    margin-top: 20px;
+    padding: 20px 15px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 10px;
+}
+
+.subscribe h3 {
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.subs-title {
+    padding: 10px 0;
+}
+
+.subs-content .subs-btn {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dis-img {
+    position: relative;
+}
+
+.discount-offer {
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    width: 200px;
+    background-color: #FF5400;
+    ;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    top: 100;
+    text-align: center;
+    transform: rotate(-20deg)
+}
+
 /* mobile responsive */
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     nav ul {
         display: none;
     }
@@ -328,5 +409,9 @@ select {
 
     .row-2 {
         width: 100%;
+    }
+
+    .newsletter {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
