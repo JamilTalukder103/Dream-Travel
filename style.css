@@ -239,6 +239,7 @@ select {
 
 .card-container {
     margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .card-container img {
@@ -358,6 +359,38 @@ select {
     top: 100;
     text-align: center;
     transform: rotate(-20deg)
+}
+
+/* footer style */
+
+
+.footer-container {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    background-color: #ddd;
+    padding: 50px 0;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social img {
+    width: 40px;
+}
+
+.footer-des {
+    padding: 20px 0;
 }
 
 /* mobile responsive */
